@@ -22,13 +22,19 @@
     responsiveVoice.speak("왜요?");
   }
 
+  function love(){
+    beep2.play();
+    responsiveVoice.speak('효린이에요. 안아주세요!');
+  }
+
   annyang.setLanguage('ko');
   annyang.debug();
   annyang.addCommands({
     '몽키야': monkey,
     '안녕': hello,
     '안녕하세요': hello,
-    '효린아': hyorin
+    '효린아': hyorin,
+    '사랑해요': love
 
   });
 
