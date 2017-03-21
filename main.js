@@ -11,10 +11,25 @@
     responsiveVoice.speak("안녕하세요 멋진 효린님!");
   }
 
+
+  function monkey(){
+    beep2.play();
+    responsiveVoice.speak("몽몽몽키입니다.");
+  }
+
+  function hyorin(){
+    beep2.play();
+    responsiveVoice.speak("왜요?");
+  }
+
   annyang.setLanguage('ko');
   annyang.debug();
   annyang.addCommands({
+    '몽키야': monkey,
     '안녕': hello,
+    '안녕하세요': hello,
+    '효린아': hyorin
+
   });
 
   annyang.start();  
