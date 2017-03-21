@@ -17,9 +17,8 @@
     '안녕': hello,
   });
 
-  setTimeout(function(){
-    annyang.start();  
-  }, 100);
+  annyang.start();  
+
   
 
 /*
